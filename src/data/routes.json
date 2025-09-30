@@ -1,0 +1,273 @@
+[
+  {
+    "id": 1,
+    "title": "2-Day Classic Venice",
+    "duration": "2 days",
+    "difficulty": "Easy",
+    "category": "Classic",
+    "description": "Perfect introduction to Venice covering all the iconic landmarks and must-see attractions.",
+    "estimatedTime": "16 hours total",
+    "price": "premium",
+    "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=800",
+    "highlights": [
+      "St. Mark's Basilica & Square",
+      "Doge's Palace",
+      "Rialto Bridge & Market",
+      "Grand Canal gondola ride",
+      "Accademia Gallery"
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "St. Mark's Basilica",
+        "duration": "2 hours",
+        "description": "Start your Venice journey at this stunning Byzantine cathedral",
+        "lat": 45.4345,
+        "lng": 12.3398,
+        "tips": "Book tickets online. Visit early morning to avoid crowds."
+      },
+      {
+        "order": 2,
+        "name": "Doge's Palace",
+        "duration": "2 hours",
+        "description": "Explore the Gothic palace and cross the Bridge of Sighs",
+        "lat": 45.4332,
+        "lng": 12.3406,
+        "tips": "Combined ticket with St. Mark's saves money."
+      },
+      {
+        "order": 3,
+        "name": "Rialto Bridge",
+        "duration": "1 hour",
+        "description": "Walk across the iconic bridge and explore the market",
+        "lat": 45.4380,
+        "lng": 12.3358,
+        "tips": "Best photos from the nearby streets, not on the bridge itself."
+      },
+      {
+        "order": 4,
+        "name": "Grand Canal Gondola",
+        "duration": "30 minutes",
+        "description": "Classic gondola ride through Venice's main waterway",
+        "lat": 45.4371,
+        "lng": 12.3326,
+        "tips": "Negotiate price beforehand. Sunset rides are magical but pricier."
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Hidden Venice Walk",
+    "duration": "1 day",
+    "difficulty": "Moderate",
+    "category": "Off the Beaten Path",
+    "description": "Escape the crowds and discover Venice's secret corners, local haunts, and hidden treasures.",
+    "estimatedTime": "6 hours",
+    "price": "budget",
+    "image": "https://images.unsplash.com/photo-1549298222-14b61f29d0c6?w=800",
+    "highlights": [
+      "Scala Contarini del Bovolo",
+      "Libreria Acqua Alta",
+      "Local bacari (wine bars)",
+      "Quiet residential canals",
+      "Artisan workshops"
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "Scala Contarini del Bovolo",
+        "duration": "45 minutes",
+        "description": "Hidden spiral staircase with panoramic views",
+        "lat": 45.4342,
+        "lng": 12.3354,
+        "tips": "Tucked in a quiet courtyard. Look for small signs."
+      },
+      {
+        "order": 2,
+        "name": "Libreria Acqua Alta",
+        "duration": "1 hour",
+        "description": "Unique bookshop with books in bathtubs and gondolas",
+        "lat": 45.4408,
+        "lng": 12.3427,
+        "tips": "Don't miss the book staircase in the back courtyard."
+      },
+      {
+        "order": 3,
+        "name": "Osteria Al Squero",
+        "duration": "1.5 hours",
+        "description": "Authentic bacaro for cicchetti and spritz by the canal",
+        "lat": 45.4295,
+        "lng": 12.3265,
+        "tips": "Stand outside by the gondola workshop. Cash only."
+      },
+      {
+        "order": 4,
+        "name": "Cannaregio District",
+        "duration": "2 hours",
+        "description": "Wander through the authentic residential neighborhood",
+        "lat": 45.4430,
+        "lng": 12.3280,
+        "tips": "Get lost intentionally. Some of Venice's best moments are unplanned."
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Romantic Evening Venice",
+    "duration": "4 hours",
+    "difficulty": "Easy",
+    "category": "Romantic",
+    "description": "A magical evening route perfect for couples, featuring sunset views, intimate dining, and moonlit strolls.",
+    "estimatedTime": "4 hours",
+    "price": "premium",
+    "image": "https://images.unsplash.com/photo-1514890547357-a9ee288728e0?w=800",
+    "highlights": [
+      "Sunset at Accademia Bridge",
+      "Romantic dinner",
+      "Evening gondola ride",
+      "St. Mark's Square at night",
+      "Live music"
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "Accademia Bridge",
+        "duration": "30 minutes",
+        "description": "Watch the sunset over the Grand Canal",
+        "lat": 45.4316,
+        "lng": 12.3283,
+        "tips": "Arrive 30 minutes before sunset. Can get crowded."
+      },
+      {
+        "order": 2,
+        "name": "Trattoria Al Gazzettino",
+        "duration": "2 hours",
+        "description": "Intimate dinner at a family-run restaurant",
+        "lat": 45.4370,
+        "lng": 12.3380,
+        "tips": "Reserve ahead. Ask for a quiet table."
+      },
+      {
+        "order": 3,
+        "name": "Evening Gondola Ride",
+        "duration": "40 minutes",
+        "description": "Moonlit gondola through quiet canals",
+        "lat": 45.4340,
+        "lng": 12.3385,
+        "tips": "Evening rides are less crowded and more romantic."
+      },
+      {
+        "order": 4,
+        "name": "St. Mark's Square",
+        "duration": "1 hour",
+        "description": "End with live music at the illuminated square",
+        "lat": 45.4340,
+        "lng": 12.3384,
+        "tips": "Cafés have live orchestras. Worth the price for the ambiance."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Foodie's Venice",
+    "duration": "5 hours",
+    "difficulty": "Easy",
+    "category": "Food & Wine",
+    "description": "A delicious journey through Venice's culinary scene, from traditional bacari to fresh seafood markets.",
+    "estimatedTime": "5 hours",
+    "price": "budget",
+    "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800",
+    "highlights": [
+      "Rialto fish market",
+      "Cicchetti crawl",
+      "Traditional osteria",
+      "Gelato tasting",
+      "Local wine bars"
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "Rialto Market",
+        "duration": "1 hour",
+        "description": "Start with fresh seafood at the historic market",
+        "lat": 45.4385,
+        "lng": 12.3368,
+        "tips": "Open mornings only. Tuesday-Saturday. Closes around 1 PM."
+      },
+      {
+        "order": 2,
+        "name": "Cantina Do Spade",
+        "duration": "1 hour",
+        "description": "Historic bacaro for cicchetti and wine",
+        "lat": 45.4376,
+        "lng": 12.3355,
+        "tips": "Try the baccalà mantecato and polpette."
+      },
+      {
+        "order": 3,
+        "name": "Osteria Al Squero",
+        "duration": "1.5 hours",
+        "description": "Authentic cicchetti by the gondola workshop",
+        "lat": 45.4295,
+        "lng": 12.3265,
+        "tips": "Order multiple small plates. Perfect spritz here."
+      },
+      {
+        "order": 4,
+        "name": "Gelateria Nico",
+        "duration": "30 minutes",
+        "description": "Finish with artisan gelato by the canal",
+        "lat": 45.4289,
+        "lng": 12.3271,
+        "tips": "Try the gianduiotto. Enjoy sitting by the water."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Islands Hopping",
+    "duration": "Full day",
+    "difficulty": "Moderate",
+    "category": "Adventure",
+    "description": "Explore Venice's beautiful surrounding islands: Murano, Burano, and Torcello.",
+    "estimatedTime": "8 hours",
+    "price": "budget",
+    "image": "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?w=800",
+    "highlights": [
+      "Murano glass factories",
+      "Burano's colorful houses",
+      "Torcello's ancient basilica",
+      "Local island cuisine",
+      "Peaceful island atmosphere"
+    ],
+    "stops": [
+      {
+        "order": 1,
+        "name": "Murano",
+        "duration": "2.5 hours",
+        "description": "Visit glass factories and watch artisans at work",
+        "lat": 45.4583,
+        "lng": 12.3564,
+        "tips": "Free glass-blowing demonstrations. Shop prices are negotiable."
+      },
+      {
+        "order": 2,
+        "name": "Burano",
+        "duration": "3 hours",
+        "description": "Photograph colorful houses and enjoy seafood lunch",
+        "lat": 45.4856,
+        "lng": 12.4168,
+        "tips": "Best photos in morning light. Try the risotto de gò."
+      },
+      {
+        "order": 3,
+        "name": "Torcello",
+        "duration": "2 hours",
+        "description": "Visit the ancient Cathedral of Santa Maria Assunta",
+        "lat": 45.4964,
+        "lng": 12.4194,
+        "tips": "Much quieter than other islands. Bring water and snacks."
+      }
+    ]
+  }
+]
