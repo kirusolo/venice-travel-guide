@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import MapPage from './pages/MapPage';
 import RoutesPage from './pages/Routes';
 import RouteDetail from './pages/RouteDetail';
+import Recommendations from './pages/Recommendations';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
           <Route path="/map" element={<MapPage />} />
           <Route path="/routes" element={<RoutesPage />} />
           <Route path="/routes/:id" element={<RouteDetail />} />
-          {/* We'll add recommendations later */}
+          <Route path="/recommendations" element={<Recommendations />} />
         </Routes>
       </div>
     </Router>
