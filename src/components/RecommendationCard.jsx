@@ -1,5 +1,6 @@
 import React from 'react';
-import { MapPin, Star, Euro, Info } from 'lucide-react';
+import { MapPin, Star } from 'lucide-react';
+import FavoriteButton from './FavoriteButton';
 
 const RecommendationCard = ({ recommendation, onViewDetails }) => {
   const getPriceIcon = (price) => {
@@ -38,6 +39,9 @@ const RecommendationCard = ({ recommendation, onViewDetails }) => {
             {recommendation.rating}
           </div>
         )}
+        <div className="absolute bottom-4 right-4">
+          <FavoriteButton type="recommendations" item={recommendation} />
+        </div>
       </div>
 
       {/* Content */}
@@ -89,9 +93,8 @@ const RecommendationCard = ({ recommendation, onViewDetails }) => {
         {/* View Details Button */}
         <button
           onClick={() => onViewDetails(recommendation)}
-          className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition flex items-center justify-center gap-2"
+          className="w-full bg-blue-600 text-white py-2 rounded-lg font-medium hover:bg-blue-700 transition"
         >
-          <Info size={18} />
           View Details
         </button>
       </div>

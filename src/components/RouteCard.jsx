@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Clock, TrendingUp, MapPin, Star } from 'lucide-react';
+import FavoriteButton from './FavoriteButton';
 
 const RouteCard = ({ route }) => {
   const navigate = useNavigate();
@@ -24,7 +25,7 @@ const RouteCard = ({ route }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+   <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300">
       {/* Image */}
       <div className="relative h-48 overflow-hidden">
         <img 
@@ -35,11 +36,14 @@ const RouteCard = ({ route }) => {
         <div className="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-sm font-semibold">
           {route.category}
         </div>
+        <div className="absolute top-4 left-4">
+          <FavoriteButton type="routes" item={route} />
+        </div>
       </div>
 
       {/* Content */}
       <div className="p-6">
-        <h3 className="text-2xl font-bold text-gray-800 mb-2">{route.title}</h3>
+       <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">{route.title}</h3>
         
         {/* Info Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
@@ -59,7 +63,7 @@ const RouteCard = ({ route }) => {
           </div>
         </div>
 
-        <p className="text-gray-600 mb-4 line-clamp-3">{route.description}</p>
+        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">{route.description}</p>
 
         {/* Price */}
         <div className="mb-4 text-sm font-semibold text-blue-600">

@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Print Styles */
+@media print {
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Hide elements during print */
+  nav,
+  footer,
+  button,
+  .no-print {
+    display: none !important;
+  }
+
+  /* Ensure content fits on page */
+  .container {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Prevent page breaks inside elements */
+  .avoid-break {
+    page-break-inside: avoid;
+  }
+
+  /* Add page breaks */
+  .page-break {
+    page-break-before: always;
+  }
+}
+
+/* Animation for PWA install prompt */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
