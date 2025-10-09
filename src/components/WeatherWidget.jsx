@@ -6,8 +6,8 @@ const WeatherWidget = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  // Replace with your API key from OpenWeatherMap
-  const API_KEY = 'YOUR_API_KEY_HERE'; // Get free key at https://openweathermap.org/api
+  
+  const API_KEY = 'afa66d0f607159fb351f26920ddd94fc'; // Get free key at https://openweathermap.org/api
   const VENICE_COORDS = { lat: 45.4408, lon: 12.3155 };
 
   useEffect(() => {

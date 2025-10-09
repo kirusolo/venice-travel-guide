@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { Menu, X, Search as SearchIcon, Heart } from 'lucide-react';
 import SearchBar from './SearchBar';
 import ThemeToggle from './ThemeToggle';
+import LanguageSelector from './LanguageSelector';
 import { useFavorites } from '../context/FavoritesContext';
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [showSearch, setShowSearch] = useState(false);
   const { getFavoritesCount } = useFavorites();
@@ -26,18 +29,18 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-4">
             <Link to="/" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              Home
+              {t('nav.home')}
             </Link>
             <Link to="/routes" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              Routes
+              {t('nav.routes')}
             </Link>
             <Link to="/map" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              Map
+              {t('nav.map')}
             </Link>
             <Link to="/recommendations" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition">
-              Recommendations
+              {t('nav.recommendations')}
             </Link>
             <Link 
               to="/favorites" 
@@ -50,11 +53,13 @@ const Navbar = () => {
                 </span>
               )}
             </Link>
+            <LanguageSelector />
             <ThemeToggle />
           </div>
 
           {/* Mobile Menu Buttons */}
           <div className="md:hidden flex items-center gap-2">
+            <LanguageSelector />
             <ThemeToggle />
             <button 
               onClick={() => setShowSearch(!showSearch)} 
@@ -91,35 +96,35 @@ const Navbar = () => {
               className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
-              Home
+              {t('nav.home')}
             </Link>
             <Link
               to="/routes"
               className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
-              Routes
+              {t('nav.routes')}
             </Link>
             <Link
               to="/map"
               className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
-              Map
+              {t('nav.map')}
             </Link>
             <Link
               to="/recommendations"
               className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
-              Recommendations
+              {t('nav.recommendations')}
             </Link>
             <Link
               to="/favorites"
               className="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 flex items-center gap-2"
               onClick={() => setIsOpen(false)}
             >
-              Favorites {favCount > 0 && `(${favCount})`}
+              {t('nav.favorites')} {favCount > 0 && `(${favCount})`}
             </Link>
           </div>
         )}
