@@ -1,6 +1,7 @@
 import React from 'react';
 import { X, MapPin, Star, Clock, Euro } from 'lucide-react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import Reviews from './Reviews';
 
 const RecommendationModal = ({ recommendation, onClose }) => {
   if (!recommendation) return null;
@@ -17,6 +18,16 @@ const RecommendationModal = ({ recommendation, onClose }) => {
   return (
     <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 overflow-y-auto">
       <div className="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+        
+         <div className="p-6 pt-0">
+          <Reviews 
+            itemId={recommendation.id} 
+            itemType="recommendation" 
+            itemName={recommendation.name} 
+          />
+        </div>
+        
+        
         {/* Close Button */}
         <button
           onClick={onClose}

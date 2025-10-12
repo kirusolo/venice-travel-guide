@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup, Polyline } from 'react-leaflet';
 import { Clock, TrendingUp, DollarSign, ArrowLeft, MapPin, Lightbulb, Printer, Download } from 'lucide-react';
 import routesData from '../data/routes.json';
+import Reviews from '../components/Reviews';
 import L from 'leaflet';
 
 const RouteDetail = () => {
@@ -13,6 +14,16 @@ const RouteDetail = () => {
   if (!route) {
     return (
       <div className="pt-16 min-h-screen flex items-center justify-center">
+           {/* Add Reviews Section - BEFORE the Back Button */}
+           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <Reviews 
+          itemId={route.id} 
+          itemType="route" 
+          itemName={route.title} 
+        />
+      </div>
+
+
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-800 dark:text-white mb-4">Route Not Found</h2>
           <button

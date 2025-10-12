@@ -158,8 +158,17 @@ const MapComponent = ({ locations, height = '600px' }) => {
                       </p>
                     </div>
                   )}
-                </div>
-              </Popup>
+    </div>
+    <button
+      onClick={() => {
+        // You can create a modal or navigate to a detail page
+        console.log('View reviews for:', location.name);
+      }}
+      className="mt-2 w-full bg-blue-600 text-white py-2 px-3 rounded text-sm hover:bg-blue-700 transition"
+    >
+      View Reviews
+    </button>
+  </Popup>
             </Marker>
           ))}
         </MapContainer>
