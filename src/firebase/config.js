@@ -9,14 +9,13 @@ import { getStorage } from 'firebase/storage';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyCFBJowlyEj0QvbAHV-oAlRiNkD92pjq2A",
-  authDomain: "venice-travel-guide-32c45.firebaseapp.com",
-  projectId: "venice-travel-guide-32c45",
-  storageBucket: "venice-travel-guide-32c45.firebasestorage.app",
-  messagingSenderId: "352017031101",
-  appId: "1:352017031101:web:daf495b25b889a54377cd4"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
